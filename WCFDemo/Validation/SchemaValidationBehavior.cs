@@ -7,6 +7,8 @@ using System.Text;
 using System.ServiceModel.Description;
 using System.Xml.Schema;
 using System.Xml.Linq;
+using System.Web.Hosting;
+using System.IO;
 
 
 namespace Microsoft.ServiceModel.Samples
@@ -34,7 +36,7 @@ namespace Microsoft.ServiceModel.Samples
             //exporter.ExportContract(endpoint.Contract);
 
             XmlSchemaSet sc = new XmlSchemaSet();
-            sc.Add(null, "http://localhost:36122/Demo.xsd");
+            sc.Add(null, Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "Demo.xsd"));
 
             SchemaValidationMessageInspector inspector = new SchemaValidationMessageInspector(sc, validateRequest, validateReply, true);
             clientRuntime.MessageInspectors.Add(inspector);
@@ -46,7 +48,7 @@ namespace Microsoft.ServiceModel.Samples
             //exporter.ExportContract(endpoint.Contract);
 
             XmlSchemaSet sc = new XmlSchemaSet();
-            sc.Add(null, "http://localhost:36122/Demo.xsd");
+            sc.Add(null, Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "Demo.xsd"));
 
             SchemaValidationMessageInspector inspector = new SchemaValidationMessageInspector(sc, validateRequest, validateReply, false);
             endpointDispatcher.DispatchRuntime.MessageInspectors.Add(inspector);
