@@ -11,7 +11,7 @@ namespace DemoClient
     {
         static void Main(string[] args)
         {
-            var client = new Service.DemoServiceInterfaceClient();
+            var client = new Service.DemoServiceClient();
 
             try
             {

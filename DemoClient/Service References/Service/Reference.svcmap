@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="096d43ba-c1a1-4a23-8499-a1c675d2da52" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b7f1e964-0e0d-4fdf-9cad-19ef44d4e474" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -8,7 +8,9 @@
     <GenerateInternalTypes>false</GenerateInternalTypes>
     <GenerateMessageContracts>true</GenerateMessageContracts>
     <NamespaceMappings />
-    <CollectionMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <UseSerializerForFaults>true</UseSerializerForFaults>
@@ -21,8 +23,9 @@
     <MetadataSource Address="http://localhost:36122/DemoService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Demo.xsd" MetadataType="Schema" ID="6e48ea60-1c60-45c2-a8f2-2e1a01445cac" SourceId="1" SourceUrl="http://localhost:36122/Demo.xsd" />
-    <MetadataFile FileName="DemoService.wsdl" MetadataType="Wsdl" ID="267724d3-6af7-4c41-87a2-3c0f826fa3e9" SourceId="1" SourceUrl="http://localhost:36122/DemoService.wsdl" />
+    <MetadataFile FileName="DemoService.wsdl" MetadataType="Wsdl" ID="69c36fd5-f5a9-453c-ad5e-e9d8e5a1de93" SourceId="1" SourceUrl="http://localhost:36122/DemoService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="DemoService.xsd" MetadataType="Schema" ID="2024e307-8d45-4f68-b6db-d42954bf3dbc" SourceId="1" SourceUrl="http://localhost:36122/DemoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DemoService1.wsdl" MetadataType="Wsdl" ID="f7b83498-f983-48fb-802c-2fc10ee5eb61" SourceId="1" SourceUrl="http://localhost:36122/DemoService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -1,50 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<definitions xmlns:import0="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="DemoService" targetNamespace="http://tempuri.org" xmlns="http://schemas.xmlsoap.org/wsdl/">
-  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
-  <types>
-    <xsd:schema>
-      <xsd:import schemaLocation="Demo.xsd" namespace="http://tempuri.org/" />
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:36122/DemoService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
     </xsd:schema>
-  </types>
-  <message name="testIn">
-    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Llamada test</wsdl:documentation>
-    <part name="parameters" element="import0:TestRequest" />
-  </message>
-  <message name="testOut">
-    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Valor devuelto</wsdl:documentation>
-    <part name="parameters" element="import0:TestResponse" />
-  </message>
-  <message name="CWError">
-    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Blabla</wsdl:documentation>
-    <part name="fault" element="import0:ErrorMessage" />
-  </message>
-  <portType name="DemoServiceInterface">
-    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
-    <operation name="Test">
-      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
-      <input message="tns:testIn" />
-      <output message="tns:testOut" />
-      <fault name="CWError" message="tns:CWError" />
-    </operation>
-  </portType>
-  <binding name="BasicHttpBinding_DemoServiceInterface" type="tns:DemoServiceInterface">
-    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="Test">
-      <soap:operation soapAction="http://tempuri.org:testIn" style="document" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-      <fault name="CWError">
-        <soap:fault use="literal" name="CWError" namespace="" />
-      </fault>
-    </operation>
-  </binding>
-  <service name="DemoServicePort">
-    <port name="DemoServicePort" binding="tns:BasicHttpBinding_DemoServiceInterface">
-      <soap:address location="http://localhost/DemoService" />
-    </port>
-  </service>
-</definitions>
+  </wsdl:types>
+  <wsdl:message name="TestRequest">
+    <wsdl:part xmlns:q1="http://tempuri.org/" name="parameters" element="q1:TestRequest" />
+  </wsdl:message>
+  <wsdl:message name="TestResponse">
+    <wsdl:part xmlns:q2="http://tempuri.org/" name="parameters" element="q2:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoService_Test_ErrorMessage_FaultMessage">
+    <wsdl:part xmlns:q3="http://tempuri.org/" name="detail" element="q3:ErrorMessage" />
+  </wsdl:message>
+  <wsdl:portType name="IDemoService">
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tempuri.org:testIn" name="TestRequest" message="tns:TestRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoService/TestResponse" name="TestResponse" message="tns:TestResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org:testIn" name="ErrorMessage" message="tns:IDemoService_Test_ErrorMessage_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -22,7 +22,6 @@ namespace DemoClient.Service {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string errorCodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -38,7 +37,7 @@ namespace DemoClient.Service {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
         public string errorCode {
             get {
                 return this.errorCodeField;
@@ -75,10 +74,10 @@ namespace DemoClient.Service {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tempuri.org", ConfigurationName="Service.DemoServiceInterface")]
-    public interface DemoServiceInterface {
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tempuri.org", ConfigurationName="Service.IDemoService")]
+    public interface IDemoService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org:testIn", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org:testIn", ReplyAction="http://tempuri.org/IDemoService/TestResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(DemoClient.Service.ErrorMessage), Action="http://tempuri.org:testIn", Name="ErrorMessage", Namespace="http://tempuri.org/")]
         DemoClient.Service.TestResponse Test(DemoClient.Service.TestRequest request);
     }
@@ -148,29 +147,29 @@ namespace DemoClient.Service {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface DemoServiceInterfaceChannel : DemoClient.Service.DemoServiceInterface, System.ServiceModel.IClientChannel {
+    public interface IDemoServiceChannel : DemoClient.Service.IDemoService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class DemoServiceInterfaceClient : System.ServiceModel.ClientBase<DemoClient.Service.DemoServiceInterface>, DemoClient.Service.DemoServiceInterface {
+    public partial class DemoServiceClient : System.ServiceModel.ClientBase<DemoClient.Service.IDemoService>, DemoClient.Service.IDemoService {
         
-        public DemoServiceInterfaceClient() {
+        public DemoServiceClient() {
         }
         
-        public DemoServiceInterfaceClient(string endpointConfigurationName) : 
+        public DemoServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public DemoServiceInterfaceClient(string endpointConfigurationName, string remoteAddress) : 
+        public DemoServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public DemoServiceInterfaceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DemoServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public DemoServiceInterfaceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DemoServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
