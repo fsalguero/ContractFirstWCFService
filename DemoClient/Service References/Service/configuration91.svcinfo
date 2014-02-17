@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="LNJODTuWnTA3fMXGEiu+H2g3Y4k=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="L1MU7ZeCNyu9Qu03UpE49tl/axE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="WSHttpBinding_IDemoService">
       <properties>
@@ -181,7 +181,7 @@
           <serializedValue>System.ServiceModel.Configuration.CertificateElement</serializedValue>
         </property>
         <property path="/identity/certificate/encodedValue" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AwAAAAEAAAAUAAAA7DtBmPEhCUdGQyTD42gVPWN9m64gAAAAAQAAABwCAAAwggIYMIIBhaADAgECAhBn9fg9ltdJmkUgvAb6SZMEMAkGBSsOAwIdBQAwIjEgMB4GA1UEAxMXSm9lJ3MtU29mdHdhcmUtRW1wb3JpdW0wHhcNMTMxMjMxMjMwMDAwWhcNMzkxMjMxMjM1OTU5WjAiMSAwHgYDVQQDExdKb2Uncy1Tb2Z0d2FyZS1FbXBvcml1bTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAnLFoRTS462HJaKGoDtADUqBn5UbogPMGOeIq3E6qKWLRX4ofQiWtyBe16I2KqdDsS3qnFFsFVneq1D/VQikBOWBx+5MPInyDbAK9gNaQuwPNL0juA1X0tL/cocL3YEQ0Y5Q81+lPBomUHui3FW3LG7f4ws7L4NtsUfy6BSh5bskCAwEAAaNXMFUwUwYDVR0BBEwwSoAQ0RkZaYmlAKsEVWTM1SCIGaEkMCIxIDAeBgNVBAMTF0pvZSdzLVNvZnR3YXJlLUVtcG9yaXVtghBn9fg9ltdJmkUgvAb6SZMEMAkGBSsOAwIdBQADgYEAW6YVKNc4mzmw+cyY48sF0MFiWpwjR0XQGh3qxwROaxm2BfJingxe65OH22Up8csFoVPYgSySjcAlQznPhyupnxE+fDeevwBbck38y48jvRZphDRHA43fy5CE6RKsZcVzNGSP3cg+e3U26/LEDrHlxsFvWnKbo9HtVgZ+RW8JrKs=</serializedValue>
+          <serializedValue>AwAAAAEAAAAUAAAAPvtwksK62mFf0DIBBso5iBePHs0gAAAAAQAAAPUBAAAwggHxMIIBXqADAgECAhAD9tnzKCLolUaiUNChbapLMAkGBSsOAwIdBQAwFTETMBEGA1UEAxMKRGVtb1NlcnZlcjAeFw0wNjEyMzEyMzAwMDBaFw0zOTEyMzEyMzU5NTlaMBUxEzARBgNVBAMTCkRlbW9TZXJ2ZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJXogooJOmU4MQyZm8Vsyu+u0aSQ55u4ROESc6+bDpXaC01sEDRxXFS4gV4MQKo49EWWeF9nDTOHcZFyb7lGKmXxXdrdrXNp3ikVberRhFZEfmxL8H2V5sA5GbRqEIYjYoZBhggvc7k71xoH1tUy2neeWdf6osnG36JcSXhPMRANAgMBAAGjSjBIMEYGA1UdAQQ/MD2AEDnZGCVWQbEe3aWH6IOF4JKhFzAVMRMwEQYDVQQDEwpEZW1vU2VydmVyghAD9tnzKCLolUaiUNChbapLMAkGBSsOAwIdBQADgYEATyFHbhMLwgtXyGokg8n/NEcc58tdhNodGDbgxRpLf+agJJP4HLbq3EBPImvJNkqekQP8OcZ2KeWGVxLOO5JUf+WNxS63pcmZ2t91jHflg7eh9H64OZLzfXPkl9aEafC7BfLLIyel+1sXDOgd7LdkcBLLa1BLWP7+qDTzgfy2Xjw=</serializedValue>
         </property>
         <property path="/identity/certificateReference" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.CertificateReferenceElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.CertificateReferenceElement</serializedValue>
