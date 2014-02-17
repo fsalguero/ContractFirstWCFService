@@ -1,2 +1,2 @@
-makecert -r -pe -b 01/01/2014 -sky exchange -sv Server.pvk Server.cer
+makecert -r -pe -n "CN=DemoServer" -b 01/01/2014 -sky exchange Server.cer -sv Server.pv
 pvk2pfx -pvk Server.pvk -spc Server.cer -pfx Server.pfx
