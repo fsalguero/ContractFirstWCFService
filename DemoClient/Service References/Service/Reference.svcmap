@@ -20,12 +20,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:36122/DemoService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://localhost/WCFDemo/demoservice.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="DemoService.wsdl" MetadataType="Wsdl" ID="69c36fd5-f5a9-453c-ad5e-e9d8e5a1de93" SourceId="1" SourceUrl="http://localhost:36122/DemoService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="DemoService.xsd" MetadataType="Schema" ID="2024e307-8d45-4f68-b6db-d42954bf3dbc" SourceId="1" SourceUrl="http://localhost:36122/DemoService.svc?xsd=xsd0" />
-    <MetadataFile FileName="DemoService1.wsdl" MetadataType="Wsdl" ID="f7b83498-f983-48fb-802c-2fc10ee5eb61" SourceId="1" SourceUrl="http://localhost:36122/DemoService.svc?wsdl" />
+    <MetadataFile FileName="DemoService2.wsdl" MetadataType="Wsdl" ID="85f880e5-3c4b-4e5b-8688-51c985c059e1" SourceId="1" SourceUrl="https://localhost/WCFDemo/DemoService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="DemoService1.xsd" MetadataType="Schema" ID="585c764c-df88-4ed3-99bb-65aac57342bf" SourceId="1" SourceUrl="https://localhost/WCFDemo/DemoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DemoService21.wsdl" MetadataType="Wsdl" ID="5d23cfc5-ebfb-4eab-ac4e-4ac3a1f6ebe4" SourceId="1" SourceUrl="https://localhost/WCFDemo/demoservice.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

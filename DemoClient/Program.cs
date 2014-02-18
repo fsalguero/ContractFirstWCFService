@@ -17,8 +17,10 @@ namespace DemoClient
             {
                 var t = client.Test(new TestRequest
                 {
-                    number = 10
+                    number = 60
                 });
+
+                Console.WriteLine(t.result1);
             }
             catch (FaultException exc)
             {

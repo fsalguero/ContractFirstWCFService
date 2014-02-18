@@ -60,14 +60,6 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Service\DemoClient.Service.TestResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\Service\DemoService.wsdl" />
-    <None Include="Service References\Service\DemoService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\Service\DemoService1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\Service\" />
@@ -79,6 +71,14 @@
     <None Include="Service References\Service\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\Service\DemoClient.Service.TestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\DemoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\DemoService2.wsdl" />
+    <None Include="Service References\Service\DemoService21.wsdl" />
     <None Include="Service References\Service\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
