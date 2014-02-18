@@ -13,7 +13,7 @@
     <RootNamespace>WCFDemo</RootNamespace>
     <AssemblyName>WCFDemo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,8 +76,8 @@
     <Compile Include="Certificates\CustomCertificateValidator.cs" />
     <Compile Include="Configuration\Section.cs" />
     <Compile Include="Configuration\ServiceCollection.cs" />
-    <Compile Include="DemoService.cs" />
     <Compile Include="ErrorMessage.cs" />
+    <Compile Include="DemoService.cs" />
     <Compile Include="IDemoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestRequest.cs" />
@@ -92,6 +92,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Certs\Client.cer" />
     <None Include="Certs\Server.cer" />
     <None Include="Certs\Server.pfx" />
     <None Include="Certs\Server.pvk" />
@@ -113,7 +114,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>36122</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:36122/</IISUrl>
+          <IISUrl>http://localhost/WCFDemo</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
