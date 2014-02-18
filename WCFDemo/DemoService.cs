@@ -8,7 +8,7 @@ namespace WCFDemo
         
         public virtual TestResponse Test(TestRequest request)
         {
-            return new TestResponse();
+            return new TestResponse { Result1 = "Successful" };
         }
     }
 }
